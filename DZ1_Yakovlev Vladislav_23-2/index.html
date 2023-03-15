@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Валидация формы</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Регистрация</header>
+      <form action="https://www.youtube.com/watch?v=04EMTOuLduI">
+        <div class="field email-field">
+          <div class="input-field">
+            <input type="email" placeholder="Введите электронную почту" class="email"/>
+          </div>
+          <span class="error email-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Введите вашу действующую электронную почту</p>
+          </span>
+        </div>
+
+        <div class="field create-password">
+          <div class="input-field">
+            <input type="password" placeholder="Создайте пароль" class="password"/>
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+          <span class="error password-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">
+              Пожалуйста введите не менее 8 символов, включая цифры, символы, строчные и заглавные буквы.
+            </p>
+          </span>
+        </div>
+
+        <div class="field confirm-password">
+          <div class="input-field">
+            <input type="password" placeholder="Подтвердите пароль" class="cPassword"/>
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+          <span class="error cPassword-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Подтвердите созданный пароль</p>
+          </span>
+        </div>
+        
+        <div class="input-field button">
+          <input type="submit" value="Отправить сейчас"/>
+        </div>
+      </form>
+      <div class="box">
+        <div class="ImHere">Эй я тут!</div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
