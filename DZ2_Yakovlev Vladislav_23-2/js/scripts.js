@@ -12,7 +12,7 @@ const circleMove = () => {
     topPos += 10;
     circle.style.top = `${topPos}px`; 
     setTimeout(circleMove, 10);
-  } else if (topPos >= 360 && count != 0) {
+  } else if (topPos >= 500 && count != 0) {
     count -= 10;
     circle.style.left = `${count}px`;
     setTimeout(circleMove, 10);
